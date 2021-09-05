@@ -1,0 +1,46 @@
+body {
+    background-image: url("/background-image/connor-jolley-Y6I4VvyN_sA-unsplash.jpg");
+    /* background-position: center;  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", sans-serif;
+}
+
+h1 {
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.countdown-container {
+    /* background-color: red; */
+    text-align: center;
+
+}
+
+.day, .hour, .minute, .second {
+    color:#FF9292;
+    /* background-color: blue; */
+    font-size: 80px;
+    width: 15%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.text {
+    font-size:40px;
+    color: #FF9292;
+}
+
+footer {
+    bottom: 10%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.author-ref {
+    margin: 0 auto;
+    width: 20%;
+    background-color: #FFE8E8;
+    border-radius: 25px;
+}
