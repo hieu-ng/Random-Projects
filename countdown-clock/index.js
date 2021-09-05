@@ -1,4 +1,4 @@
-var countdownDate = new Date(2021,8,10)
+var countdownDate = new Date(2021,8,11)
 console.log("countdownDate", countdownDate)
 
 var headerText = document.getElementById("header-text")
