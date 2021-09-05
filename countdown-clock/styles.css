@@ -1,9 +1,9 @@
 body {
-    background-image: url("background-image/connor-jolley-Y6I4VvyN_sA-unsplash.jpg");
+    background-image: url("background-image/lGOs5Th.jpg");
     /* background-position: center;  */
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +12,7 @@ body {
 h1 {
     /* margin: 0 auto; */
     text-align: center;
+    color: #464660;
 }
 
 .countdown-container {
@@ -20,14 +21,12 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
-
 .day, .hour, .minute, .second {
-        color:#FF9292;
+    color: #BD4B4B;
     /* background-color: blue; */
-    font-size: 80px;
-    width: 15%;
+    font-size: 100px;
+    /* width: 15%; */
     display: inline-block;
     margin: 0 auto;
     margin: 1rem 2rem;
@@ -35,8 +34,8 @@ h1 {
 }
 
 .text {
-    font-size:40px;
-    color: #FF9292;    
+    font-size: 40px;
+    color: #BD4B4B;
 }
 
 footer {
@@ -54,7 +53,7 @@ footer {
 }
 
 .back {
-    margin-top:10px;
+    margin-top: 10px;
     border-radius: 25px;
     font-size: 30px;
 }
