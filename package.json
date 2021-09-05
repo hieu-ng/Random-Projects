@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "autoprefixer": "^10.3.4",
     "live-server": "^1.2.1",
-    "package": "^1.0.1"
+    "package": "^1.0.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.9",
+    "vite": "^2.5.3"
   }
 }
