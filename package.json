@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "vite"
+  },
   "dependencies": {
     "autoprefixer": "^10.3.4",
     "live-server": "^1.2.1",
