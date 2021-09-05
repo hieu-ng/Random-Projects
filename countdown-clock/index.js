@@ -45,7 +45,7 @@ function getDateDifference(countdownDate) {
         if (secondDiff < 2) {
             document.getElementById("text-second").innerHTML = "second"
         } else {
-            document.getElementById("text-second").innerHTML = "second"
+            document.getElementById("text-second").innerHTML = "seconds"
         }
     } catch (error) {
         console.log("error in getDateDifference", error)
