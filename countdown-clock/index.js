@@ -13,21 +13,14 @@ setInterval(() => {
 function getDateDifference(countdownDate) {
     try {
         var currentDate = new Date()
-console.log("currentDate", currentDate)
         var difference = countdownDate - currentDate  
-        console.log("difference", difference)
         var dayDiff = Math.floor(difference / 86400000).toFixed(0);
-        console.log("daydiff", dayDiff)
         difference-= parseInt(dayDiff) * 86400000
-        console.log("remain", difference)
         var hourDiff = Math.floor(difference / (1000*60*60)).toFixed(0);
-        console.log("hourDiff", hourDiff)
         difference-= hourDiff * (1000*60*60)
         var minuteDiff = Math.floor(difference / (1000*60)).toFixed(0);
-        console.log("minuteDiff", minuteDiff)
         difference-= minuteDiff * (1000*60)
         var secondDiff = Math.floor(difference / (1000)).toFixed(0);
-        console.log("secondDiff", secondDiff)
         
         // set value
         document.getElementById("number-day").innerHTML = addZeros(String(dayDiff))
@@ -54,7 +47,7 @@ console.log("currentDate", currentDate)
 function formatDate(date) {
     try {
         let d = new Date(date)
-        return String(d.getFullYear()) + "-" + addZeros(String(d.getMonth())) + "-" + addZeros(String(d.getDate()))
+        return String(d.getFullYear()) + "-" + addZeros(String(d.getMonth()+1)) + "-" + addZeros(String(d.getDate()))
     } catch (error) {
         console.log("error in formatDate", error)
     }
