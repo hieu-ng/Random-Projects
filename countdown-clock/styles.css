@@ -52,3 +52,9 @@ footer {
     background-color: #FFE8E8;
     border-radius: 25px;
 }
+
+.back {
+    margin-top:10px;
+    border-radius: 25px;
+    font-size: 30px;
+}
