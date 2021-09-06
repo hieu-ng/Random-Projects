@@ -1,6 +1,9 @@
 
 var excludedQuizList = []
+var incorrectQuizList = []
+var correctQuizList = []
 var quizCount = 1
+var checkMode = false
 var data = fetch('quiz.json')
     .then(response => response.json())
     .then(data => {
@@ -40,15 +43,21 @@ submitEvent = (quizList) => {
                 console.log("answer", answerId)
                 console.log("correctAnswer", correctAnswer)
                 if (answerId != correctAnswer) {
-                    alert("Wrong Answer")
+                    incorrectQuizList.push(quizId)
                 }
                 else {
+                    correctQuizList.push(quizId)
                     if (excludedQuizList.length < quizList.length) {
                         removeCheckboxes()
                         populateQuiz(quizList)
                     }
                     else {
-                        alert("Congratulations. You finished the quiz!")
+                        if (incorrectQuizList.length == 0) {
+                            alert("Congratulation. You finished the quiz!")
+                        }
+                        else {
+
+                        }
                     }
                 }
             }
@@ -61,6 +70,8 @@ submitEvent = (quizList) => {
         console.log("Error in submitEvent", error)
     }
 }
+
+
 
 updateExcludedQuizList = (quizId) => {
     try {
