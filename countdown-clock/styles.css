@@ -1,5 +1,5 @@
 body {
-    background-image: url("background-image/lGOs5Th.jpg");
+    background-image: url("background-image/finding-dan-dan-grinwis-Y_65Ec8fWvM-unsplash.jpg");
     /* background-position: center;  */
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .day, .hour, .minute, .second {
     color: #BD4B4B;
     /* background-color: blue; */
@@ -33,23 +34,22 @@ h1 {
     font-weight: 600;
 }
 
+#header-text-anni, #header-text {
+    color: #FD6F96;
+}
+
 .text {
     font-size: 40px;
     color: #BD4B4B;
 }
 
-footer {
-    bottom: 10%;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-}
-
 .author-ref {
     margin: 0 auto;
-    width: 20%;
+    width: 15%;
     background-color: #FFE8E8;
     border-radius: 25px;
+    font-size: 8px;
+    text-align: center;
 }
 
 .back {
