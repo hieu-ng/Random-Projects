@@ -6,3 +6,6 @@
     background-color: burlywood;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
